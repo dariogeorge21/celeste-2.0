@@ -212,11 +212,6 @@ export default function Competitions() {
               >
                 
               </motion.span>
-              <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent">
-                  Special Event Alert!
-                </h3>
-              </div>
               <motion.span 
                 animate={{ rotate: [0, -10, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
