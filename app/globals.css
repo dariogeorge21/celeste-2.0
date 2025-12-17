@@ -43,6 +43,14 @@
     @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden;
   }
 
+  .mobile-center {
+    @apply text-center lg:text-left;
+  }
+
+  .mobile-center-flex {
+    @apply justify-center lg:justify-start;
+  }
+
   .snowflake {
     position: absolute;
     color: rgba(255, 255, 255, 0.8);

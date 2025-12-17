@@ -39,7 +39,7 @@ export default function CompetitionCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ delay: index * 0.1, duration: 0.6 }}
-      className="card group"
+      className="card group w-full max-w-md mx-auto md:max-w-none"
     >
       {/* Poster Image */}
       {posterImage && (
@@ -53,13 +53,13 @@ export default function CompetitionCard({
         </div>
       )}
 
-      <div className="p-6 space-y-4">
+      <div className="p-6 space-y-4 text-center md:text-left">
         {/* Title and Icon */}
-        <div className="flex items-start justify-between">
-          <h3 className="font-playfair text-2xl font-bold text-gray-900 flex-1">
+        <div className="flex items-center justify-center md:justify-between flex-col md:flex-row space-y-2 md:space-y-0">
+          <h3 className="font-playfair text-2xl font-bold text-gray-900 flex-1 text-center md:text-left">
             {title}
           </h3>
-          <span className="text-4xl ml-2">{icon}</span>
+          <span className="text-4xl md:ml-2">{icon}</span>
         </div>
 
         {/* Biblical Quote */}
@@ -107,7 +107,7 @@ export default function CompetitionCard({
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 pt-2">
+        <div className="flex flex-col sm:flex-row gap-3 pt-2 justify-center md:justify-start">
           <button
             onClick={onViewRules}
             className="flex-1 px-4 py-2 text-sm font-semibold text-christmas-green border-2 border-christmas-green rounded-lg hover:bg-christmas-green hover:text-white transition-all duration-300"

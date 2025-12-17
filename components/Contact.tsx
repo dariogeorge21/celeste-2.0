@@ -53,7 +53,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Contact Cards */}
-          <div className="space-y-6">
+          <div className="space-y-6 text-center lg:text-left">
             {contacts.map((contact, index) => (
               <motion.div
                 key={index}
@@ -112,7 +112,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="card p-8 space-y-6"
+            className="card p-8 space-y-6 text-center"
           >
             <div className="flex items-center justify-center space-x-6 mb-6">
               <div className="relative h-20 w-20">

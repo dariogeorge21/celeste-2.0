@@ -335,7 +335,7 @@ export default function Competitions() {
         </div>
 
         {/* Competition Cards Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto justify-items-center md:justify-items-stretch">
           {competitions.map((competition, index) => (
             <CompetitionCard
               key={competition.id}
