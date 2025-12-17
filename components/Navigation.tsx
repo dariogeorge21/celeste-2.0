@@ -55,6 +55,14 @@ export default function Navigation() {
                 className="object-contain"
               />
             </div>
+            <div className="relative h-12 w-12 sm:h-14 sm:w-14">
+              <Image
+                src="/jy.png"
+                alt="Jesus Youth Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
             <div className="hidden sm:block">
               <h1 className="font-playfair text-xl lg:text-2xl font-bold text-christmas-red">
                 Celeste 2.0
