@@ -30,10 +30,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className={inter.className}>
         <Navigation />
-        <main>{children}</main>
+        <main className="min-h-screen">{children}</main>
       </body>
     </html>
   );
