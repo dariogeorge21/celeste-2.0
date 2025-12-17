@@ -43,7 +43,7 @@ export default function CompetitionCard({
     >
       {/* Poster Image */}
       {posterImage && (
-        <div className="relative w-full h-48 bg-gradient-to-br from-christmas-red/20 to-christmas-green/20">
+        <div className="relative w-full h-80 bg-gradient-to-br from-christmas-red/20 to-christmas-green/20">
           <Image
             src={posterImage}
             alt={`${title} Poster`}
