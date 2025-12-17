@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-christmas-cream via-white to-christmas-snow text-gray-900 font-inter;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .heading-primary {
+    @apply font-playfair text-4xl sm:text-5xl lg:text-6xl font-bold text-christmas-red;
+  }
+
+  .heading-secondary {
+    @apply font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-christmas-green;
+  }
+
+  .heading-tertiary {
+    @apply font-playfair text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-white bg-christmas-red rounded-lg shadow-lg hover:bg-christmas-darkRed hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold text-christmas-green border-2 border-christmas-green rounded-lg hover:bg-christmas-green hover:text-white transform hover:scale-105 transition-all duration-300 ease-in-out;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden;
+  }
+
+  .snowflake {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    animation: fall linear infinite;
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .text-gradient-christmas {
+    @apply bg-gradient-to-r from-christmas-red via-christmas-gold to-christmas-green bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-christmas {
+    @apply bg-gradient-to-br from-christmas-red via-christmas-gold to-christmas-green;
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0.5;
+  }
+}
