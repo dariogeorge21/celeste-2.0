@@ -32,10 +32,8 @@ Create a complete Next.js website for "Celeste 2.0" - a Christmas celebration ev
 
 #### 3. Schedule/Timeline Section
 - Visual timeline showing the event flow from 10:00 AM to 1:00 PM
-- Include specific timings:
-  - 9:15 AM - 12:15 PM: Crib Making Competition
-  - 12:15 PM: Judges evaluation
-  - Other activities and competitions throughout the day
+- Key activities:
+  Add placeholders for now. We will add the details later.
 - Use animated timeline component with Framer Motion
 
 #### 4. Competitions Section
